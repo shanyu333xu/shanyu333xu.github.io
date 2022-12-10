@@ -1,0 +1,1875 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./政务网/body_bg.jpg) repeat-x;
+    background-color: #fdfff5;
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+    }
+    .clearfix:after{
+    clear:both;
+    }
+    .clearfix{
+    *zoom:1;
+    }
+.center{
+    margin: 0 auto;
+    width: 1040px;
+}
+a{
+    text-decoration: none;
+}
+*{
+    list-style: none;
+}
+.nav{
+    background: url(./政务网/nav_bg.jpg) repeat-x;
+    height:30px;
+    position: relative;
+    left: 227px;
+    z-index: 2;    
+}
+.nav ul li a{
+    display: block;
+    color: #fff;
+    /* border: 1px solid purple; */
+}
+.nav ul li {
+    float: left;
+    height: 40px;
+    width: 110px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left: 35px;
+    /* border: 1px solid #000; */
+}
+.nav ul .li1:hover{
+    background:url(./政务网/nav_over_bg.gif) no-repeat top;
+    color: #fde62c;
+}
+.nav ul li .submenu {
+    display: none;
+    /* border: 1px solid blue; */
+    position: relative;
+    left: -250px;
+}
+.nav ul li .submenu2{
+    display: none;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: -300px;
+}
+.nav ul li .submenu3{
+    display: none;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: -250px;
+}
+.nav ul li .submenu4{
+    display: none;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: -250px;
+}
+.nav ul li .submenu5{
+    display: none;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: -360px;
+}
+.nav ul li .submenu6{
+    display: none;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: -250px;
+}
+.nav ul li .submenu7{
+    display: none;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: -550px;
+}
+.nav ul li .ul1 li{
+    height: 30px;
+    line-height: 45px;
+    /* border: 1px solid red; */
+}
+.nav ul .li1 .ul2 li{
+    height: 30px;
+    line-height: 45px;
+    /* border: 1px solid purple; */
+}
+.nav ul .li1 .ul3 li{
+    height: 30px;
+    line-height: 45px;
+    /* border: 1px solid purple; */
+}
+.nav ul .li1 .ul4 li{
+    height: 30px;
+    line-height: 45px;
+    /* border: 1px solid purple; */
+}
+.nav ul .li1 .ul5 li{
+    height: 30px;
+    line-height: 45px;
+    /* border: 1px solid purple; */
+}
+.nav ul .li1 .ul6 li{
+    height: 30px;
+    line-height: 45px;
+    /* border: 1px solid purple; */
+}
+.nav ul .li1 .ul7 li{
+    height: 30px;
+    line-height: 45px;
+    /* border: 1px solid purple; */
+}
+.nav ul li .submenu
+{
+    width: 450px;
+    height: 25px;
+    text-align: center;
+    background:
+    url(./政务网/submenu_l.gif) no-repeat left,
+    url(./政务网/submenu_r.gif) no-repeat right,
+    url(./政务网/submenu_bg.gif);
+}
+.nav ul li .submenu2
+{
+    width: 790px;
+    height: 25px;
+    background:
+    url(./政务网/submenu_l.gif) no-repeat left,
+    url(./政务网/submenu_r.gif) no-repeat right,
+    url(./政务网/submenu_bg.gif);
+}
+.nav ul li .submenu3
+{
+    width: 400px;
+    height: 25px;
+    background:
+    url(./政务网/submenu_l.gif) no-repeat left,
+    url(./政务网/submenu_r.gif) no-repeat right,
+    url(./政务网/submenu_bg.gif);
+}
+.nav ul li .submenu4
+{
+    width: 530px;
+    height: 25px;
+    background:
+    url(./政务网/submenu_l.gif) no-repeat left,
+    url(./政务网/submenu_r.gif) no-repeat right,
+    url(./政务网/submenu_bg.gif);
+}
+.nav ul li .submenu5
+{
+    width: 680px;
+    height: 25px;
+    background:
+    url(./政务网/submenu_l.gif) no-repeat left,
+    url(./政务网/submenu_r.gif) no-repeat right,
+    url(./政务网/submenu_bg.gif);
+}
+.nav ul li .submenu6
+{
+    width: 340px;
+    height: 25px;
+    background:
+    url(./政务网/submenu_l.gif) no-repeat left,
+    url(./政务网/submenu_r.gif) no-repeat right,
+    url(./政务网/submenu_bg.gif);
+}
+.nav ul li .submenu7
+{
+    width:650px;
+    height: 25px;
+    background:
+    url(./政务网/submenu_l.gif) no-repeat left,
+    url(./政务网/submenu_r.gif) no-repeat right,
+    url(./政务网/submenu_bg.gif);
+}
+.nav ul li .submenu .ul1 li{
+    float: left;
+    line-height: 25px;
+    width: 90px;
+    margin-left: -20px;
+}
+.nav ul li .submenu2 .ul2 li{
+    float: left;
+    line-height: 25px;
+    width:130px;
+    /* border: 1px solid #000; */
+    margin-left: -21px;
+}
+.nav ul li .submenu3 .ul3 li{
+    float: left;
+    line-height: 25px;
+    width:80px;
+    margin-left: -20px;
+}
+.nav ul li .submenu4 .ul4 li{
+    float: left;
+    line-height: 25px;
+    width:80px;
+    margin-left: -20px;
+}
+.nav ul li .submenu5 .ul5 li{
+    float: left;
+    line-height: 25px;
+    width:60px;
+    margin-left: -5px;
+}
+.nav ul li .submenu6 .ul6 li{
+    float: left;
+    line-height: 25px;
+    width:80px;
+    margin-left: -11px;
+}
+.nav ul li .submenu7 .ul7 li{
+    float: left;
+    line-height: 25px;
+    width:105px;
+    margin-left: -20px;
+}
+.nav ul li .submenu .ul1 li a{
+    display: inline-block;
+    height: 25px;
+    padding: 0 1px;
+    color: #8b9a62;
+    font-size: 11px;
+  
+}
+.nav ul li .submenu2 .ul2 li a{
+    display: inline-block;
+    height: 25px;
+    padding: 0 0px;
+    color: #8b9a62;
+    font-size: 11px;
+}
+.nav ul li .submenu3 .ul3 li a{
+    display: inline-block;
+    height: 25px;
+    padding: 0 0px;
+    color: #8b9a62;
+    font-size: 11px;
+}
+.nav ul li .submenu4 .ul4 li a{
+    display: inline-block;
+    height: 25px;
+    padding: 0 0px;
+    color: #8b9a62;
+    font-size: 11px;
+}
+.nav ul li .submenu5 .ul5 li a{
+    display: inline-block;
+    height: 25px;
+    padding: 0 2px;
+    color: #8b9a62;
+    font-size: 11px;
+}
+.nav ul li .submenu6 .ul6 li a{
+    display: inline-block;
+    height: 25px;
+    padding: 0 0px;
+    color: #8b9a62;
+    font-size: 11px;
+}
+.nav ul li .submenu7 .ul7 li a{
+    display: inline-block;
+    height: 25px;
+    padding: 0 0px;
+    color: #8b9a62;
+    font-size: 11px;
+}
+.nav ul li:hover .submenu{
+    display: block;
+}
+.nav ul li:hover .submenu2{
+    display: block;
+}
+.nav ul li:hover .submenu3{
+    display: block;
+}
+.nav ul li:hover .submenu4{
+    display: block;
+}
+.nav ul li:hover .submenu5{
+    display: block;
+}
+.nav ul li:hover .submenu6{
+    display: block;
+}
+.nav ul li:hover .submenu7{
+    display: block;
+}
+.nav .submenu .ul1 li a:hover
+{
+    color: #000;
+}
+.nav .li1 .submenu2 .ul2 a:hover{color: #000;}
+.nav .li1 .submenu3 .ul3 a:hover{color: #000;}
+.nav .li1 .submenu4 .ul4 a:hover{color: #000;}
+.nav .li1 .submenu5 .ul5 a:hover{color: #000;}
+.nav .li1 .submenu6 .ul6 a:hover{color: #000;}
+.nav .li1 .submenu7 .ul7 a:hover{color: #000;}
+
+
+.content
+{
+    width: 1200px;
+    height: 1250px;
+    background: url(./政务网/bm_l.jpg) repeat-y 158px -5px,
+   url(./政务网/bm_l.jpg) repeat-y right;
+   position: relative;
+   left: 70px;
+   /* url(gsl_b.jpg) repeat-x buttom; */
+}
+.bg1{
+    background:url("./政务网2/mytd_btn1.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg2{
+    background: url("./政务网2/mytd_btn2.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg3{
+    background: url("./政务网2/mytd_btn3.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg4{
+    background: url("./政务网2/mytd_btn4.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg4{
+    background: url("./政务网2/mytd_btn4.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg5{
+    background: url("./政务网2/mytd_btn5.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg6{
+    background: url("./政务网2/mytd_btn6.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg7{
+    background: url("./政务网2/mytd_btn7.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg8{
+    background: url("./政务网2/mytd_btn8.jpg") no-repeat;
+   width: 88px;
+   height: 30px;
+   background-size: 70px 60px;
+}
+.bg1:hover{
+    background: url("./政务网2/mytd_btn1.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bg2:hover{
+    background: url("./政务网2/mytd_btn2.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bg3:hover{
+    background: url("./政务网2/mytd_btn3.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bg4:hover{
+    background: url("./政务网2/mytd_btn4.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bg5:hover{
+    background: url("./政务网2/mytd_btn5.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bg6:hover{
+    background: url("./政务网2/mytd_btn6.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bg7:hover{
+    background: url("./政务网2/mytd_btn7.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bg8:hover{
+    background: url("./政务网2/mytd_btn8.jpg") 0px -30px no-repeat;
+    width: 88px;
+    height: 30px;
+    background-size: 70px 60px;
+}
+.bao{
+    display: block;
+    height: 20px;
+    width: 178px;
+  
+}
+.tubiao01{
+    display: inline;
+    background:url("./政务网/left_hd_title_icon1.gif")-18px 3px no-repeat ;
+   float: right;
+   width: 20px;
+   height: 20px;
+  
+}
+.tubiao01:hover{
+      display: inline;
+    background:url("./政务网/left_hd_title_icon1.gif")0px -16px no-repeat ;
+   float: right;
+   width: 40px;
+   height: 20px;
+}
+.tubiao02{
+    display: inline;
+    background:url("./政务网/left_hd_title_icon2.gif")-18px 3px no-repeat ;
+   float: right;
+   width: 20px;
+   height: 20px;
+}
+.tubiao02:hover{
+    display: inline;
+    background:url("./政务网/left_hd_title_icon2.gif")0px -16px no-repeat ;
+   float: right;
+   width: 40px;
+   height: 20px;
+}
+
+.tubiao03{
+    display: inline;
+    background:url("./政务网/left_hd_title_icon3.gif")-18px 3px no-repeat ;
+    position: relative;
+    left: 65px;
+   float: right;
+   width: 20px;
+   height: 20px;
+}
+.tubiao03:hover{
+    display: inline;
+    background:url("./政务网/left_hd_title_icon3.gif")0px -16px no-repeat ;
+   float: right;
+   width: 103px;
+   height: 20px;
+}
+.left{
+    width: 206px;
+    height: 1350px;
+    position: absolute;
+    top: 15px;
+    left: 160px;
+}
+.minyi{
+    padding: 0px;
+    width: 200px;
+    height: 260px;
+}
+.minyi img{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    top:-18px;
+    left: 3px;
+}
+/* position:absolute; clip:rect(46px 229px 83px 193px); */
+.btn{
+    height: 45px;
+    margin-top: -10px;
+}
+.btn ul{
+    width: 200px;
+}
+.btn ul li{
+    float: left;
+    width: 70px;
+    
+}
+.btnleft{
+    margin:0px 0px 2px 25px;
+}
+.btnright{
+    margin:0px 0px 2px 5px;
+}
+
+.btn ul li img{
+    width: 100%;
+}
+.left2{
+   margin: -15px 10px 10px 10px;
+    width: 180px;
+    height: 490px;
+    border:1px solid #96d03d;
+    background-color: #fff;
+}
+.left2  .h4{
+    font-size: 13px;
+    font-family: "宋体";
+    font-weight: bolder;
+    color: #faa056;
+}
+.left  .tubiao
+{
+    float: right;
+}
+.left  .tubiao1{
+    display: inline-block;
+    margin-left:5px;
+    margin-right: 0px;
+}
+
+#scroll {
+    margin: 0;
+    padding: 2px 0;
+    list-style: none;
+    width: 178px;
+    height: 200px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #9fd354;
+}
+
+#scroll li{
+    margin: 0;
+    padding: 0 4px;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    width: 600px;
+  
+}
+#scroll li a{
+    color: #89c777;
+}
+#scroll li a:hover{color:#faa056;}
+.comment{
+    background-color: #fdfff5;
+}
+.pingyicontent{
+    height:115px;
+    width: 178px;
+}
+.commentwenzi
+{
+    margin: 13px;
+    border: 1px solid #e7eccd;
+    height: 110px;
+    width: 150px;
+    background-color: #fff;
+}
+
+.pingyili{
+    border-bottom:1px solid #e7eccd;
+    margin: 5px;
+}
+.pingyili a{
+   display: inline-block;
+    font-size: 9px;
+    font-family: "宋体";
+    font-weight: initial;
+   color: #adb976;
+}
+.pingyili a:hover{
+    color: #faa056;
+}
+.commentwenziout
+{
+    margin: 7px;
+}
+.investigate
+{
+    background-color: #fdfff5;
+}
+.investigatecontent{
+    height:115px;
+    width: 178px;
+}
+.investigatewenzi
+{
+    margin: 13px;
+    border: 1px solid #e7eccd;
+    height: 70px;
+    width: 150px;
+    background-color: #fff;
+}
+.investigateli {
+    border-bottom:1px solid #e7eccd;
+    margin: 5px;
+}
+.investigate a{
+    display: inline-block;
+     font-size: 9px;
+     font-family: "宋体";
+     font-weight: initial;
+    color: #adb976;
+ }
+.investigateli2 a
+{
+    display: inline-block;
+    font-size: 9px;
+    font-weight:bold;
+    color: #adb976;
+
+}
+.investigatewenziout{
+    margin: 7px;
+}
+.investigatewenziout a:hover{
+    color: #faa056;
+}
+.shengtai{
+     width: 180px;
+     height:288px;
+     margin-top: 6px;
+    border: 1px solid #96d03d ;
+    background: url(./政务网/left_stcm_u.jpg)0px -10px no-repeat ;
+    background-color:#fdfff5 ;
+    position: relative;
+    left: 10px;
+    }
+.shengtai1
+{
+    margin: 14px;
+}
+.investigateli {
+    border-bottom:1px solid #e7eccd;
+    margin: 5px;
+}
+.shengtaili a
+{
+    display: inline-block;
+    font-size: 3px;
+    color: #adb976;
+}
+.shengtaili a:hover{color: #faa056;}
+.shengtaiout{
+    margin-top: 50px;
+}
+.fenge{
+    border: 1px solid #9fd354 ;
+}
+.shengtailia
+{
+    display: inline-block;
+    font-size: 3px;
+    color: #686868;
+   
+   
+}
+.shengtailia li::before{
+    content: url(./政务网/left_stcmList_dot.gif);
+}
+.shengtailia li{
+    margin: 6px 0px 10px 0px;
+    border-bottom:1px dotted #686868 ;
+}
+.shengtailia a{
+    display: inline-block;
+    margin-bottom: 5px;
+    color:#81c24a;
+
+}
+.shengtailia a:hover{color: #faa056;}
+.shengtailia .last {
+    margin-bottom: 0;
+}
+.post{
+    background:
+    url("./政务网/mailForm_title.jpg") no-repeat,
+    url("./政务网/mailForm_title_pw.jpg") 15px 70px no-repeat;
+    height: 200px;
+ 
+}
+.bg11{
+    height: 160px;
+     background:
+     url("./政务网/mailForm_b.jpg") 0px 145px no-repeat,
+      url("./政务网/mailForm_bg.jpg")
+      ;
+      
+}
+.mytubiao
+{
+    background:url("./政务网/mailForm_icon1.gif")6px no-repeat ;
+    padding-left: 17px;
+    border-image:url("./政务网/mailForm_bg.jpg");
+    border: 1px solid #9fd354;
+}
+input{
+    outline: none;
+}
+.post .lefttext{
+    margin-left: 10px;
+   
+}
+.text2{
+    height: 55px;
+   
+}
+.mytubiao1
+{
+    background:url("./政务网/mailForm_icon2.gif") 6px no-repeat ;
+    padding-left: 17px;
+    border-image:url("./政务网/mailForm_bg.jpg");
+    border: 1px solid #9fd354;
+}
+.text3{
+    margin-top: 15px;
+}
+.td11{
+    padding-left: 5px;
+}
+.leftbiaodan
+{
+    height: 26px;
+    width: 70px;
+    margin-left: 10px;
+    background: url("./政务网/mailForm_btn1.jpg");
+}
+.rightbiaodan
+{
+    height: 26px;
+    width: 70px;
+    position: relative;
+    left: -71px;
+    background: url("./政务网/mailForm_btn2.jpg");
+}
+/* .rightbiaodan input{
+    height: 50px;
+    width: 70px;
+    background: url("./政务网/mailForm_btn2.jpg");
+    border: 0;
+} */
+.new1
+{
+    /* display: flex; */
+    width:850px ;
+    height: 170px;
+    position: relative;
+    top: 90px;
+    left: 65px;
+    font-size: 13px;
+    /* background: url(main_uc.jpg) repeat-x -9px ; */
+    /* border: 1px solid red; */
+}
+.new1 ul li
+{
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+    color: #89c777;
+    background: url(./政务网/linkTab.jpg) no-repeat;
+}
+.new1 ul li a{
+  
+    color: #89c777;
+    font-size: 12px;
+   padding-right: 3px;
+}
+.pA11{
+    position: relative;
+    top: -60px;
+}
+.pA12{
+    position: relative;
+    top: -17px;
+}
+.wanye2{
+    width: 665px;
+    height: 160px;
+    position: relative;
+    top: -74px;
+    left: 165px;
+    background:
+     url(./政务网/linkTable_l1.jpg) no-repeat left,
+    url(./政务网/linkTable_r.jpg) no-repeat right, 
+     url(./政务网/bm_b.jpg) no-repeat 1px -3px,
+     url(./政务网/bm_b.jpg) no-repeat 1px 156px;
+}
+.wanye2 ul li{
+    float: left;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    padding-left:20px;
+    border-bottom: 1px dotted gainsboro;
+    /* border: 1px solid red; */
+    margin-left:-30px ;
+    position: relative;
+    top: 5px;
+    left: 40px;
+}
+.wanye2 ul li a{
+    font-size: 10px;
+    line-height: 20px;
+    padding-left:5px ;
+    color: rgb(220, 220, 220);
+    /* color: #000; */
+}
+.wanye2 ul li a:hover{
+    color: #faa056;
+}
+.wanye2 ul li::before{
+    content:url(./政务网/left_stcmList_dot.gif);
+}
+.tab-body-div {
+    display: none;
+}
+.tab-body-div.current {
+    display: block;
+}
+.tab-head-div.current {
+    background: url(./政务网/linkTab_sel.jpg);
+    color: #faa056;
+}
+.wanye3{
+    width: 665px;
+    height: 160px;
+    position: relative;
+    top: -74px;
+    left: 165px;
+    background:
+     url(./政务网/linkTable_l2.jpg) no-repeat left,
+    url(./政务网/linkTable_r.jpg) no-repeat right, 
+     url(./政务网/bm_b.jpg) no-repeat 1px -3px,
+     url(./政务网/bm_b.jpg) no-repeat 1px 156px;
+}
+.wanye3 ul li{
+    float: left;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    padding-left:20px;
+    border-bottom: 1px dotted gainsboro;
+    /* border: 1px solid red; */
+    margin-left:-30px ;
+    position: relative;
+    top: 5px;
+    left: 40px;
+}
+.wanye3 ul li a{
+    font-size: 10px;
+    line-height: 20px;
+    padding-left:5px ;
+    color: rgb(220, 220, 220);
+}
+.wanye3 ul li a:hover{
+    color: #faa056;
+}
+.wanye3 ul li::before{
+    content:url(./政务网/left_stcmList_dot.gif);
+}
+
+.wanye4{
+    width: 665px;
+    height: 160px;
+   
+    position: relative;
+    top: -76px;
+    left: 165px;
+    background:
+     url(./政务网/linkTable_l3.jpg) no-repeat left,
+    url(./政务网/linkTable_r.jpg) no-repeat right, 
+     url(./政务网/bm_b.jpg) no-repeat 1px -3px,
+     url(./政务网/bm_b.jpg) no-repeat 1px 156px;
+}
+.wanye4 ul li{
+    float: left;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    padding-left:20px;
+    border-bottom: 1px dotted gainsboro;
+    /* border: 1px solid red; */
+    margin-left:-30px ;
+    position: relative;
+    top: 5px;
+    left: 40px;
+}
+.wanye4 ul li a{
+    font-size: 10px;
+    line-height: 20px;
+    padding-left:5px ;
+    color: rgb(220, 220, 220);
+}
+.wanye4 ul li a:hover{
+    color: #faa056;
+}
+.wanye4 ul li::before{
+    content:url(./政务网/left_stcmList_dot.gif);
+}
+.wanye5{
+    width: 665px;
+    height: 160px;
+   
+    position: relative;
+    top: -79px;
+    left: 165px;
+    background:
+     url(./政务网/linkTable_l4.jpg) no-repeat left,
+    url(./政务网/linkTable_r.jpg) no-repeat right, 
+     url(./政务网/bm_b.jpg) no-repeat 1px -3px,
+     url(./政务网/bm_b.jpg) no-repeat 1px 156px;
+}
+.wanye5 ul li{
+    float: left;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    padding-left:20px;
+    border-bottom: 1px dotted gainsboro;
+    /* border: 1px solid red; */
+    margin-left:-30px ;
+    position: relative;
+    top: 5px;
+    left: 40px;
+}
+.wanye5 ul li a{
+    font-size: 10px;
+    line-height: 20px;
+    padding-left:5px ;
+    color: rgb(220, 220, 220);
+}
+.wanye5 ul li a:hover{
+    color: #faa056;
+}
+.wanye5 ul li::before{
+    content:url(./政务网/left_stcmList_dot.gif);
+}
+.banquan{
+    margin: 0 auto;
+    height: 100px;
+    /* border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000; */
+    position: relative;
+    top:1271px;
+    left: 230px;
+    background: url(./政务网/wsbs_b.jpg) repeat-x top,
+    url(./政务网/footer_logo.jpg) no-repeat 25px 30px ,
+    url(./政务网2/070516002.jpg) no-repeat 800px 36px,
+    url(./政务网/footer_icp_logo.gif) no-repeat 800px 14px,
+    url(./政务网2/footer_line.gif) no-repeat 210px 30px,
+    url(./政务网2/footer_line.gif) no-repeat 780px 30px;
+}
+.banquanp1{
+    position: relative;
+    top: -60px;
+    left: 355px;
+    color:#95a279 ;
+}
+.banquan .wenchongm
+{
+    width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    color: #94a278;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.banquan .wenchongm .Aa1{
+    color:#81c24a ;
+    font-weight: 800;
+}
+.banquan .wenchongm .Aa1:hover{
+    color: #faa056;
+}
+.banquan .wenchongm .Aa2{
+    color:#8d9a61 ;
+    font-weight: 800;
+}
+.banquan .wenchongm .Aa2:hover{
+    color: #faa056;
+}
+
+
+.newsul11 a{
+    color: gray;font-size: 10px;}
+    
+    .newsul11 li::before{
+        content: url(./政务网/left_stcmList_dot.gif);
+    }
+    .newsul11 li::after{
+        content: "2011-4-13";
+        color: gray;font-size: 10px;
+        float: right;
+    }
+    .newsul11 a:hover{
+        color: #faa056}
+    .newsul11 li{
+        border-bottom:1px dotted gray ;
+        margin-bottom: 2px;
+    }
+    .listnavmore{
+        width: 45px;
+        height: 25px;
+        position: absolute;
+        top: 60px;
+        left: 700px;
+/* border: 1px solid #000; */
+    }
+    .listcontent{
+        width: 490px;
+        height: 150px;
+    }
+    .newstitle{
+        width: 490px;
+        height: 40px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: orange;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .newscontent{
+        width: 490px;
+        height: 150px;
+    }
+    .listpic{
+        width: 450px;
+        height: 80px;
+    }
+    .newstitle a{color: #faa056;}
+    .newstitle a:hover{border-bottom:2px solid #faa056 ;}
+    .newslist{
+        width: 490px;
+        height: 300px;
+        float: right;
+    }
+    
+    .listnav li{
+        width: 73px;
+        height: 26px;
+        line-height: 26px;
+        float: left;
+        /* margin-right: 5px; */
+        position: relative;
+        left: -10px;
+        background: url(./政务网/newsTab.jpg) no-repeat;
+    }
+    /* .listnav li a{
+        font-size: 12px;
+        color:#227f12 ;
+    } */
+    .listnav{
+        display: flex;
+        width: 340px;
+        height: 22px;
+        font-size: 11px;
+        position: relative;
+        z-index: 30;
+        /* border: 1px solid #000; */
+    }
+    
+    
+    .tab-head2 {
+                    display: flex;
+                }
+                /* flex-grow生长为100%*/
+                .tab-head-div2 {
+                    flex-grow: 1;
+                    text-align: center;
+                    background: green;
+                    border-right: 1px solid white;
+                    line-height: 40px;
+                }
+                .tab-head-div2.current1 {
+                    background: url(./政务网/newsTab_sel.jpg);
+        color: #faa056;
+                }
+                .tab-body-div2 {
+                    display: none;
+                }
+                .tab-body-div2.current1 {
+                    display: block;
+                }
+
+
+.righttext{
+    width: 800px;
+    height: 2000px;
+    background-color: (255,255,255);
+    position: absolute;
+    top: 3px;
+    left: 400px;
+}
+.retrieval{
+    width: 835px;
+    height: 50px;
+    position: relative;
+    top: 25px;
+    left: 28px;
+background-color: #ffffff;
+/* z-index: 10; */
+
+}
+.guanjianzi input{
+    position: relative;
+    top: -45px;
+    left: 20px;
+}
+
+.select1{
+    position: relative;
+    top: -1px;
+    left: 0px;
+}
+.weatherlogo{
+    float: left;
+    margin-top: 10px;
+}
+.guanjianzi input{
+    width: 100px;
+    height:15px;
+}
+.search{
+    width: 600px;
+    height: 100px;
+    float:right;
+    margin-top: 10px;  
+}
+.lilsearch{
+    width: 450px;
+    height: 80px;
+    float: right;
+}
+.news{
+    width: 765px;
+    height: 300px;
+    position: relative;
+    left: 65px;
+    top: -50px;
+}
+
+.newsphoto{
+    /* border: 1px solid red; */
+    width: 250px;
+    height: 300px;
+    float: left;
+    position: relative;
+    top: 30px;
+    background-color: RGB(124,198,61);
+}
+.weatherA1{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: -10px;
+    /* border: 1px solid purple; */
+}
+
+.newslist{
+    width: 490px;
+    height: 300px;
+    float: right;
+}
+.lilnewsphoto{
+    width: 250px;
+    height: 180px;
+}
+.GSL{
+    width: 250px;
+    height: 30px;
+}
+.GSLcontent{
+    
+    width: 240px;
+    height:85px;
+    background-color: RGB(70,139,16);
+    margin-left: 5px;
+}
+.newstitle a{color: #faa056;}
+.newstitle a:hover{border-bottom:2px solid #faa056 ;}
+.GSLcontent a{
+color: white;margin-left: 5px;font-size: 10px;}
+.GSLcontent .GSLdetail a:hover{color: #faa056}
+.GSLdetail{
+    width: 240px;
+    height: 40px;
+}
+.GSLtime{
+    width: 45px;
+    height: 25px;
+    background: url(./政务网/gsl_time_bg.gif);
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.newsul11 a{
+color: gray;font-size: 10px;}
+
+.newsul11 li::before{
+    content: url(./政务网/left_stcmList_dot.gif);
+}
+.newsul11 li::after{
+    content: "2011-4-13";
+    color: gray;font-size: 10px;
+    float: right;
+}
+.newsul11 a:hover{
+    color: #faa056}
+.newsul11 li{
+    border-bottom:1px dotted gray ;
+    margin-bottom: 2px;
+}
+/* .listnav{
+    width: 490px;
+    height: 25px;
+    border: solid;
+    border-color: green;
+    border-top-color:transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+} */
+.imul1 a{color: gray;font-size: 12px;}
+.imul1 a:hover{color: #faa056;}
+.imul1 li::before{
+    content: url(./政务网/left_stcmList_dot.gif);
+}
+.imul1 li::after{
+    content: "2011-4-13";
+    color: gray;font-size: 12px;
+    float: right;
+}
+.imul1 li{
+    border-bottom:1px dotted gray ;
+    margin-bottom: 2px;
+}
+.alillistnav{
+    width: 73px;
+    height: 25px;
+    background: url(./政务网/newsTab_sel.jpg);
+    float: left;
+}
+.blillistnav{
+    width: 73px;
+    height: 25px;
+    background: url(./政务网/newsTab.jpg);
+    float: left;
+}
+.listnavmore{
+    width: 45px;
+    height: 25px;
+    float: right;
+}
+.listcontent{
+    width: 490px;
+    height: 150px;
+}
+.newstitle{
+    width: 490px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: orange;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.newscontent{
+    width: 490px;
+    height: 150px;
+}
+.listpic{
+    width: 450px;
+    height: 80px;
+}
+.imformation{
+    width: 790px;
+    height: 220px;            
+    position: relative;
+    top: -20px;
+    left: 65px;
+/* border: 1px solid #000; */
+}
+
+.imforlistnav
+{
+
+    background-color:#79ba34 ;
+}
+
+.imforlist{
+    width: 540px;
+    height: 200px;
+    float: left;
+   
+    background:url(./政务网/wsbs_l.jpg) repeat-y left,
+    url(./政务网/wsbs_r.jpg) repeat-y right,
+    url(./政务网/wsbs_b.jpg) repeat-x bottom;
+
+}
+.imformenutitle{
+    position: relative;
+    left: 3px;
+}
+.imformenu{
+    width: 230px;
+    height: 220px;
+ float: right;
+    background: 
+    url(./政务网/xxgkML_bg.jpg) no-repeat 3px;
+    
+}
+.imul3 li{
+    float: left;
+    font-size: 12px;
+    /* border: 1px solid #000; */
+    margin-top: 6px;
+    margin-left: 6px;
+    
+}
+.imul3 li a{
+    color: #89c777;
+
+}
+.imul3 li a:hover{color: #faa056;}
+.imforhead{
+    width: 540px;
+    height: 20px;
+}
+.imforlistnav{
+    width: 500px;
+    height: 20px;
+    float: left;
+    /* border: 1px solid red; */
+}
+.IMul2 li{
+    float: left;
+    margin-left: 30px;
+}
+.IMul2 a{
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+}
+.IMul2 a:hover{color: #faa056;}
+.imforlistmore{
+    width: 40px;
+    height: 20px;
+    float: right;
+}
+.imforbody{
+    width: 540px;
+    height: 200px;
+    /* background: url(./政务网/wsbs_l.jpg) repeat-y -1px 10px; */
+
+
+}
+.imforcontent{
+    width: 510px;
+    height: 130px;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* border: 1px solid purple; */
+}
+.imforcontentpic{
+    width: 500px;
+    height: 60px;
+}
+.imformenutitle{
+    width: 200px;
+    height: 40px;            
+}
+.imformenutext{
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    color: green;
+    font-size: 12px;
+    line-height: 25px;
+}
+.online{
+    width: 765px;
+    height: 160px;
+    margin-top: 10px;
+    position: relative;
+    left: 65px;
+    top: 40px;
+    /* border: 1px solid red; */
+    background: url(./政务网/wsbs_l.jpg) repeat-y left ,
+    url(./政务网/wsbs_r.jpg) repeat-y right ,
+    url(./政务网/wsbs_b.jpg) repeat-x bottom,
+  url(./政务网/wsbs_search_l.jpg) repeat-y 350px;
+
+    background-color: #fff;
+}
+.onlinehead{
+    width: 765px;
+    height: 30px;
+    /* border: 1px solid blue; */
+    background:url(./政务网/wsbs_title.jpg) no-repeat left;
+}
+
+.onlinebodytitle a{
+    font-size: 13px;
+    font-weight: bolder;
+    color: #faa056;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.onlinebodytitle a:hover{color: #81c24a;}
+.ontileright{
+    width: 570px;
+    height: 29px;
+    position: relative;
+    left: 193px;
+    background-color: #8ed04b;
+}
+.onlinecontent{
+    width: 390px;
+    height: 85px;
+   
+
+}
+.onlinecontent .onul1 li
+{
+    width: 300px;
+    position: relative;
+    top: -15px;
+    left: 15px;
+    border-bottom:1px dotted #cecece ;
+}
+.onlinecontent .onul1 li::before
+{
+    content: url(./政务网/left_stcmList_dot.gif);
+}
+
+.onlinesearch{
+    width: 450px;
+    height: 30px;
+    /* border: 1px solid #fde62c; */
+    position: relative;
+    top: -28px;
+}
+.onlinesearch span{
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    padding-left: 240px;
+    line-height: 30px;
+}
+.onlinebody{
+    width: 760px;
+    height: 120px;
+}
+.onlinebodytitle{
+    width: 390px;
+    height: 35px;
+}
+
+.OLcontentleft{
+    width: 390px;
+    height: 120px;
+    /* border: 1px solid purple; */
+    position: relative;
+    top: -20px;
+}
+/* ><p style="color: gray;font-size: 13px;"> */
+
+/* <p style="color: orange;line-height:30px;margin-left: 20px;font-weight: 600;font-size: 13px;"> */
+.onlinecontent a{
+    color: #000;
+    font-size: 12px;
+}
+.onlinecontent a:hover{color: #faa056;}
+.OLcontentpic{
+    float: left;
+}
+.online111 
+{
+    width: 340px;
+    /* border: 1px solid blue; */
+    position: relative;
+    top: -25px;
+    left: 440px;
+    background: url(./政务网/wsbs_title_btn.gif) no-repeat 275px;
+}
+.OLcontentright{
+    width: 350px;
+    height: 120px;
+   /* border: 1px solid blueviolet; */
+   position: relative;
+   top: -140px;
+   left: 415px;
+}
+.guidesearch{
+    width: 350px;
+    height: 25px;
+}
+.guideselect{
+    width: 350px;
+    height: 35px;
+}
+.downloadsearch{
+    width: 350px;
+    height: 50px;
+}
+.tips{
+    width: 770px;
+    height: 230px;
+    position: relative;
+    top: 70px;
+    left: 65px;
+    background-color: #fff;
+}
+.tips1a{
+    width:688px ;
+    height: 22px;
+    background: 
+    url(./政务网/bmTip_dot.gif) no-repeat 540px ,
+    url(./政务网/bmTip_r.jpg) no-repeat 680px,
+    url(./政务网/nav_bg.jpg) repeat-x;
+    position: relative;
+    top: 3px;
+    left: 75px;
+    z-index: 4;
+    /* border: 1px solid red; */
+    
+}
+#p1a{
+    height: 20px;
+    width: 200px;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: 560px;
+    top:-54px;
+    z-index: 5px;
+    font-size: 12px;
+    
+}
+
+.tipshead{
+    width: 765px;
+    height: 30px;
+    margin-top: 5px;
+    /* border: 1px solid blue; */
+    background: 
+    url(./政务网/bmTip_title.jpg) no-repeat left;
+   
+    background-color: #79ba34;
+}
+
+.tipsbody{
+    width: 765px;
+    height: 205px;
+    border: solid;
+    border-color: green;
+}
+.serve1
+{
+    width: 320px;
+    height:100px ;
+    /* border: 1px solid red; */
+}
+.serve1 ul
+{  border-bottom: 1px dotted gray;}
+
+.serve1 li{
+    float: left;
+    height: 40px;
+    width: 55px;
+margin-left: 1px;
+  position: relative;
+  top: -50px;
+  left: 20px;
+margin-top: -5px;
+}
+.serve1 a{
+    color:#686868 ;
+    font-size: 12px;
+}
+.serve1 a:hover{
+    color: #faa056;
+}
+.server2a
+{
+    width: 320px;
+    height: 25px;
+    background: url(./政务网/bm_fwdh_title.jpg) no-repeat -5px 0px;
+    background-color: #7fb93d;
+}
+.div22
+{
+    position: relative;
+    top: -25px;
+    left: 270px;
+}
+.tipsnav{
+    width: 320px;
+    height: 205px;
+    /* border: 1px solid purple; */
+    
+}
+
+.tipsnavcontent{
+    width: 320px;
+    height: 30px;
+    text-align: center;
+    color: gray;
+    line-height: 36px;
+    font-size: 14px;
+}
+.tipsnavimg1{
+    width: 320px;
+    height: 75px;
+    position: relative;
+    top: -70px;
+    border-top:1px dotted gray ;
+}
+.tipnavimg2{
+    width: 320px;
+    height: 30px;
+    position: relative;
+    top: -70px;
+}
+.map{
+    width: 160px;
+    height: 205px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: -435px;
+    left: 600px;
+}
+.maptitle{
+    width: 161px;
+    height: 25px;
+    background-color: RGB(113,187,40);
+ 
+}
+
+.mappic{
+    width: 160px;
+    height: 180px;
+    position: relative;
+   top:10px;
+   
+    
+}
+.QA{
+    width: 285px;
+    height: 205px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: -231px;
+    left: 319px;
+
+}
+.QAtitle{
+    width: 284px;
+    height: 25px;
+    background-color: RGB(113,187,40);
+}
+.QAcontent{
+    width: 280px;
+    height: 177px;
+    border: solid;
+    border-color: green;
+    border-top-color:transparent;
+}
+.img1A {
+    position: relative;
+    top: -31px;
+}
+.img1B{
+    position: relative;
+    top: -61px;
+    left: 230px;
+}
+.QAcontent a{
+    color:#585858 ;
+    font-size: 12px;
+}
+.QAcontent a:hover{color: #faa056;}
+.QAcontent li
+{
+    border-bottom:1px dotted gray ;
+    /* border: 1px solid #000; */
+    margin-top: 2px;
+    padding-left:10px ;
+}
+
+.QAcontent li::before
+{
+    content: url(./政务网/left_stcmList_dot.gif);
+}
+
+.tipimgs1{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh1.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs2{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh2.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs3{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh3.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs4{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh4.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs5{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh5.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs6{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh6.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs7{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh7.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs8{
+    width: 35px;
+    height: 55px;
+    background: url(./政务网2/bm_fwdh_dh8.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.tipimgs1:hover{
+    background: url(./政务网2/bm_fwdh_dh1.jpg);
+    background-position: 50% 100%;
+}
+.tipimgs2:hover{
+    background: url(./政务网2/bm_fwdh_dh2.jpg);
+    background-position: 50% 100%;
+}
+.tipimgs3:hover{
+    background: url(./政务网2/bm_fwdh_dh3.jpg);
+    background-position: 50% 100%;
+}
+.tipimgs4:hover{
+    background: url(./政务网2/bm_fwdh_dh4.jpg);
+    background-position: 50% 100%;
+}
+.tipimgs5:hover{
+    background: url(./政务网2/bm_fwdh_dh5.jpg);
+    background-position: 50% 100%;
+}
+.tipimgs6:hover{
+    background: url(./政务网2/bm_fwdh_dh6.jpg);
+    background-position: 50% 100%;
+}
+.tipimgs7:hover{
+    background: url(./政务网2/bm_fwdh_dh7.jpg);
+    background-position: 50% 100%;
+}
+.tipimgs8:hover{
+    background: url(./政务网2/bm_fwdh_dh8.jpg);
+    background-position: 50% 100%;
+}
+.imforcontentpic1{
+    width: 160px;
+    height: 35px;
+    background: url(./政务网2/xxgk_btn1.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-left: 5px;
+}
+.imforcontentpic2{
+    width: 160px;
+    height: 35px;
+    background: url(./政务网2/xxgk_btn2.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-left: 5px;
+}
+.imforcontentpic3{
+    width: 160px;
+    height: 35px;
+    background: url(./政务网2/xxgk_btn3.jpg);
+    background-position: 50% 0%;
+    float: left;
+    margin-left: 5px;
+}
+.imforcontentpic1:hover{
+    background: url(./政务网2/xxgk_btn1.jpg);
+    background-position: 50% 100%;
+}
+.imforcontentpic2:hover{
+    background: url(./政务网2/xxgk_btn2.jpg);
+    background-position: 50% 100%;
+}
+.imforcontentpic3:hover{
+    background: url(./政务网2/xxgk_btn3.jpg);
+    background-position: 50% 100%;
+}
