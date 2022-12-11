@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政务网</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        window.onload = function () {
+            function dMarquee(id) {
+                let speed = 20; //速度
+                let stop = 1000; //停止时间
+ 
+                let ul = document.getElementById(id);//获取ul元素
+                let rows = ul.getElementsByTagName('li').length;//获取li个数
+                let height = ul.getElementsByTagName('li')[0].offsetHeight;//取得第一个li的高度
+                ul.innerHTML += ul.innerHTML;//获取所有li
+                let timeID = false;//setTime的时间标示
+                let play = function () { //移动方法
+                    ul.scrollTop++;//移动滚动条
+                    //移动到底的时候恢复为零
+                    if (ul.scrollTop === rows * height) {
+                        ul.scrollTop = 0;
+                    }
+                    //每次滚动
+                    if (ul.scrollTop % height === 0) {
+                        timeID = setTimeout(play, stop);
+                    } else {
+                        timeID = setTimeout(play, speed);
+                    }
+                }
+                timeID = setTimeout(play, stop);
+                ul.onmouseover = function () {
+                    clearTimeout(timeID);
+                }
+                ul.onmouseout = play;
+            }
+
+            dMarquee('scroll');
+
+             var span=document.getElementById('p1a');
+                 var dateStr=formatDate();
+                 //将时间放置到span中
+                 span.innerText=dateStr;
+                 //每隔一秒。再放置一次最新的时间
+                 setInterval(function(){
+                     span.innerText=formatDate();
+                 },1000);
+                //格式化年月日时分秒
+                function formatDate(){
+                 var date =new Date();
+                 var year=date.getFullYear();
+                 var month=date.getMonth()+1;
+                 var day=date.getDate();
+                 day=day<10?'0'+day:day;
+                 var hours=date.getHours();
+                 hours=hours<10?'0'+hours:hours;
+                 var minutes=date.getMinutes();
+                 minutes=minutes<10?'0'+minutes:minutes;
+                 var seconds =date.getSeconds();
+                 seconds=seconds<10?'0'+seconds:seconds;
+                 return year+'-'+month+'-'+day+' '+hours+':'+minutes+':'+seconds;
+                }
+        }
+    </script>
+</head>
+<body>
+    <!-- 导航区开始 -->
+    <div class="div11" style="position: absolute;">
+    <div  class="nav center">
+    <ul>
+        <li class="li1"><a href="#">首页</a></li>
+        <li class="li1"><a href="#">崇明概况</a></li>
+        <li class="li1"><a href="#">新闻中心</a>
+            <div class="submenu clearfix">
+            <ul class="ul1">
+                <li><a href="#">崇明新闻 |</a></li>
+                <li><a href="#">视频新闻 |</a></li>
+                <li><a href="#">崇明报 |</a></li>
+                <li><a href="#">热点专题 |</a></li>
+                <li><a href="#">新闻发布专栏 |</a></li>
+                <li><a href="#">公告栏 |</a></li>
+            </ul>
+        </div>
+        </li>
+        <li class="li1"><a href="#">信息公开</a>
+            <div class="submenu2 clearfix">
+            <ul class="ul2" >
+                <li><a href="#">最新公开信息 |</a></li>
+                <li><a href="#">信息公开目录 |</a></li>
+                <li><a href="#">信息公开指南 |</a></li>
+                <li><a href="#">信息公开年报 |</a></li>
+                <li><a href="#">县政府部门和乡镇公开 |</a></li>
+                <li><a href="#">政府公报 |</a></li>
+                <li><a href="#">更多 |</a></li>
+            </ul>
+        </div>
+        </li>
+        <li class="li1"><a href="#">网上办事</a>
+            <div class="submenu3 clearfix">
+            <ul class="ul3">
+                <li><a href="#">办事指南 |</a></li>
+                <li><a href="#">表格下载 |</a></li>
+                <li><a href="#">行政审批 |</a></li>
+                <li><a href="#">市民办事 |</a></li>
+                <li><a href="#">企业办事 |</a></li>
+                <li><a href="#">办事机构 |</a></li>
+            </ul>
+        </div>
+        </li>
+        <li class="li1"><a href="#">互动渠道</a>
+            <div class="submenu4 clearfix">
+            <ul class="ul4">
+                <li><a href="#">网上信访 |</a></li>
+                <li><a href="#">书记信箱 |</a></li>
+                <li><a href="#">县长信箱 |</a></li>
+                <li><a href="#">纪委信箱 |</a></li>
+                <li><a href="#">部门信箱 |</a></li>
+                <li><a href="#">镇长信箱 |</a></li>
+                <li><a href="#">监督投诉 |</a></li>
+                <li><a href="#">我要咨询 |</a></li>
+            </ul>
+        </div>
+        </li>
+        <li class="li1"><a href="#">便民服务</a>
+            <div class="submenu5 clearfix">
+            <ul class="ul5">
+                <li><a href="#">便民提示|</a></li>
+                <li><a href="#">食|</a></li>
+                <li><a href="#">行|</a></li>
+                <li><a href="#">购|</a></li>
+                <li><a href="#">住|</a></li>
+                <li><a href="#">游|</a></li>
+                <li><a href="#">医|</a></li>
+                <li><a href="#">学|</a></li>
+                <li><a href="#">服务导航 |</a></li>
+                <li><a href="#">便民地图 |</a></li>
+                <li><a href="#">便民问答 |</a></li>
+            </ul>
+        </div>
+        </li>
+        <li class="li1"><a href="#">投资指南</a>
+            <div class="submenu6 clearfix">
+            <ul class="ul6">
+               <li><a href="#">园区介绍 |</a></li>
+            <li><a href="#">视频介绍 |</a></li>
+            <li><a href="#">投资服务 |</a></li>
+            <li><a href="#">在线投资 |</a></li>
+            </ul>
+        </div>
+        </li>
+        <li class="li1"><a href="#">生态崇明</a>
+            <div class="submenu7 clearfix">
+            <ul class="ul7">
+            <li><a href="#">崇明新貌 |</a></li>
+            <li><a href="#">生态建设规划 |</a></li>
+            <li><a href="#">万河整治 |</a></li>
+            <li><a href="#">环保三年行动计划 |</a></li>
+            <li><a href="#">节能减排 |</a></li>
+            <li><a href="#">环境优美乡镇创建 |</a></li>
+            <li><a href="#">生态旅游 |</a></li>
+            </ul>
+        </div>
+        </li>
+    </ul>
+    </div>
+    <!-- 导航区结束 -->
+    <!-- 内容区开始 -->
+    <div class="divA1" style="position: absolute;">
+    <div class="content center">
+    <!-- 左边信息区开始 -->
+    <div class="left">
+        <!-- 民意通道区开始 -->
+        <div class="minyi">
+          <a href="#"><img src="./政务网/left_up_btn.jpg" alt=""></a> 
+        <div class="btn">
+            <ul class="clearfix">
+                <li class="btnleft"><a href="#"><div class="bg1 "></div></a></li>
+                <li class="btnright"><a href="#"><div class="bg2"></div></a></li>
+                <li class="btnleft" ><a href="#"><div class="bg3"></div></a></li>
+                <li class="btnright"><a href="#"><div class="bg4"></div></a></li>
+                <li class="btnleft"><a href="#"><div class="bg5"></div></a></li>
+                <li class="btnright"><a href="#"><div class="bg6"></div></a></li>
+                <li class="btnleft"><a href="#"><div class="bg7"></div></a></li>
+                <li class="btnright"><a href="#"><div class="bg8"></div></a></li>
+
+            </ul>
+        </div>
+        </div>
+        <!-- 民意通道区结束 -->
+        <!-- 民呼我应区开始 -->
+        <!-- 左边第二个 -->
+        <div class="left2">
+            <ul class="bao clearfix">
+            <li class="tubiao1"><img src="./政务网/left_hd_title_dot.gif" alt=""><span class="h4">民呼我应</span></li>
+           <a href="#" title="更多"> <li class="tubiao01"></li></a>
+        </ul>
+        <!-- 民呼我应内容区 -->
+            <ul id="scroll">
+                <li><a href="">黄东先生</a>  </li>
+                <li><a href="">县交通运输和港口管理局给你反馈消息</a>  </li>
+                <li><a href="">叶挺先生</a>  </li>
+                <li><a href="">给您反馈消息</a>  </li>
+                <li><a href="">李振涛先生</a>  </li>
+                <li><a href="">给您反馈消息</a>  </li>   
+                <li><a href="">黄东先生</a>  </li>
+                <li><a href="">县交通运输和港口管理局给你反馈消息</a>  </li>
+                <li><a href="">叶挺先生</a>  </li>
+                <li><a href="">给您反馈消息</a>  </li>
+                <li><a href="">李振涛先生</a>  </li>
+                <li><a href="">给您反馈消息</a>  </li>  
+            </ul>
+        <!-- 民呼我应区结束 -->
+        <!-- 网上评议区开始 -->
+        <div class="comment">
+            <ul class="bao clearfix">
+                <li class="tubiao1"><img src="./政务网/left_hd_title_dot.gif" alt=""><span class="h4">网上评议</span></li>
+               <a href="#" title="更多"><li class="tubiao02"></li></a>
+            </ul>
+            <!-- 网上评议内容区 -->
+       <div class="pingyicontent">
+        <div class="commentwenzi">
+            <div class="commentwenziout">
+            <ul>
+                <li class="pingyili"><a href="#">2010年上海市政风行风网上测评</a></li>
+                <li class="pingyili"><a href="#">崇明县”十大女杰"投票评选</a></li>
+                <li class="pingyili"><a href="#">县交通运输和港口管理局就本县候车亭设...</a></li>
+            </ul>
+        </div>
+        </div>
+         </div>
+        </div>
+        <!-- 网上评议区结束 -->
+        <!-- 民意调查区开始 -->
+        <div class="investigate">
+            <ul class="bao clearfix">
+                <li class="tubiao1"><img src="./政务网/left_hd_title_dot.gif" alt=""><span class="h4">民意调查</span></li>
+               <a href="#" title="更多"><li class="tubiao03"></li></a>
+            </ul>
+                <div class="investigatewenzi">
+                    <div class="investigatewenziout">
+                    <ul>
+                        <li class="investigateli"><a href="#">2010年崇明县域内公交线网新辟及调...</a></li>
+                        <li class="investigateli2"><a href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp参与调查</a></li>
+                    </ul>
+                </div>
+                </div>
+                 </div>
+        </div>
+        <!-- 民意调查区结束 -->
+        
+        <!-- 生态崇明区开始 -->
+        <div class="shengtai">
+            <div class="shengtai1">
+                <div class="shengtaiout">
+                <ul>
+                    <span class="shengtaili"><a href="#">崇明新貌</a></span>
+                    <span class="shengtaili"><a href="#">生态建设规划</a></span>
+                    <span class="shengtaili"><a href="#">节能减排</a></span>
+                    <span class="shengtaili"><a href="#">环保三年行动计划</a></span>
+                    <span class="shengtaili"><a href="#">万河整治</a></span>
+                    <span class="shengtaili"><a href="#">环境优美乡镇创建</a></span>
+                    <span class="shengtaili"><a href="#">生态农业</a></span>
+                    <span class="shengtaili"><a href="#">生态教育</a></span>
+                    <span class="shengtaili"><a href="#">生态旅游</a></span>
+                </ul>
+            </div>
+            <div class="fenge"></div>
+            <ul class="shengtailia">
+                <li><a href="#">关于印发《崇明县2009...</a></li>
+                <li ><a href="#">崇明县2009年节能降耗...</a></li>
+                <li><a href="#">崇明县关于加强节能减排...</a></li>
+                <li class="last"><a href="#">2009年度崇明县产业结...</a></li>
+            </ul>
+        </div>
+        
+        <!-- 生态崇明区结束 -->
+        <!-- 公务邮箱区开始 -->
+        <div class="bg11">
+        <div class="post">
+            <form action="#" method="post" id="myform2" >
+                <table>
+                    <tr>
+                        <div class="text2"></div>
+                       <td><span class="lefttext"></span><input type="text" class="mytubiao" style="width:155px;"></td>
+                    </tr>
+                    <tr>
+                        <td><div class="text3"><span class="lefttext"></span><input type="text" class="mytubiao1" style="width:155px;"></div></td>
+                     </tr>
+                     <tr>
+                        <td><div class="leftbiaodan ><input type="image" src="./政务网/mailForm_btn1.jpg" height="26px" 
+                            width="70px" border="0" onclick="return false;"></div></td>
+                        <td><div class="rightbiaodan"><input type="image" src="./政务网/mailForm_btn2.jpg" height="26px" 
+                            width="70px" border="0" onclick="reset(); return false;"></div></td>
+                     </tr>
+                </table>
+            </form>
+    </div>
+</div>
+</div>
+        <!-- 公务邮箱区结束 -->
+    </div>
+</div>
+</div>
+    <!-- 左边信息区结束 -->
+    <!-- 右边信息区开始 -->
+    
+    <div class="righttext center">
+        <!-- 搜索区开始 -->
+        <div class="retrieval">
+            <div class="weatherlogo">
+              <img src="./政务网/weather_icon.gif">
+            </div>
+            <div class="searchAAA">
+              <p style="float: left;"></p>
+              <div class="lilsearch">
+                  <img src="./政务网/search_icon.gif">
+                  <p style="color: green; position: relative; top: -20px;left: 20px; font-size:13px; font-weight: bolder;">站内搜索：</p>
+                 <div class="guanjianzi"><input type="text" placeholder="请输入关键字" style="position: relative;z-index: 1; width: 110px; left: 80px;top:-40px ;font-size: 11px;" ></div> 
+                  <div class="select1"><select style="position: relative;z-index: 1; width: 100px;left: 193px;top: -60px;">
+                        <option value="all">整个网站</option>
+                        <option value="all">崇明新闻</option>
+                        <option value="all">生态崇明</option>
+                        <option value="all">文明崇明</option>
+                        <option value="all">崇明人口</option>
+                        <option value="all">崇明人才</option>
+                        <option value="all">崇明体育</option>
+                        <option value="all">崇明公安</option>
+                        <option value="all">崇明农业</option>
+                        <option value="all">崇明园林</option>
+                        <option value="all">崇明质监</option>
+
+                    </select>
+                </div>
+                  <img src="./政务网/search_btn.gif" style="position: relative; top: -85px; left:296px;top: -80px;">
+                  <img src="./政务网/search_btn_ad.gif"style="position: relative; top: -85px; left:297px;top: -80px;">
+              </div>
+            </div>
+          </div>
+        <!-- 搜索区结束 -->
+        <!-- style="border:solid 1px #7ec8ea" width="250" height="100" frameborder="0" 
+	marginwidth="0" marginheight="0" scrolling="no"  -->
+        <div class="news">
+            <div class="card">
+                <div class="search">
+                <input type="text" class="search-bar" placeholder="Search for a place..." autocomplete="off">
+                <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                </path>
+            </svg></button>
+            </div>
+            <div class="weather loading">
+                <div class="AA22">
+                <h2 class="city">fuzhou</h2>
+                <h1 class="temp">15°C</h1>
+                <div class="flex">
+                <img src="https://openweathermap.org/img/wn/01n.png" alt="icon" class="icon" />
+                <div class="description">Sunny</div>
+                </div>
+            </div>
+                <!-- <div class="humidity">Humidity: 80%</div> -->
+                <!-- <div class="wind">Wind speed: 2.44km/h</div> -->
+            </div>
+            </div>
+            <script>
+                 let weather = {
+    apiKey: "8fa23948b5ec171a5a4e67936002ce76",
+    fetchWeather: function (city) {
+        fetch(
+        "https://api.openweathermap.org/data/2.5/weather?q="
+         + city
+         + "&units=metric&appid="
+         + this.apiKey
+        )
+         .then((response) => response.json())
+         .then((data) => this.displayWeather(data));
+        },
+        displayWeather: function(data) {
+            const { name } = data;
+            const { icon, description } = data.weather[0];
+            const { temp, humidity } = data.main;
+            const { speed } = data.wind;
+            document.querySelector(".city").innerText = "Weather in " + name
+            document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+            document.querySelector(".description").innerText = description;
+            document.querySelector(".temp").innerText = Math.round(temp) + "°C";
+            // document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+            // document.querySelector(".wind").innerText = "Wind Speed: " + speed + "Km/h"
+             document.querySelector(".weather").classList.remove("loading");
+            // document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920×1080/? " + name + "')"
+        },
+        search: function () {
+            this.fetchWeather(document.querySelector(".search-bar").value);
+        },
+};
+
+document.querySelector(".search button").addEventListener("click", function() {
+    weather.search();
+});
+
+document.querySelector(".search-bar").addEventListener("keyup", function(event) {
+    if (event.key == "Enter") {
+        weather.search();
+    }
+});
+
+weather.fetchWeather("fuzhou");
+            </script>
+            <div class="newsphoto">
+                <div class="lilnewsphoto">
+                    <img src="./政务网/picnews_title.jpg" style="height: 25px;">
+                    <img src="./政务网/focus.jpg" style="margin-left: 5px;margin-right: 5px;width: 240px;height: 155px;">
+                </div>
+                <div class="GSL">
+                    <img src="./政务网/gsl_title.jpg" style="float: left">
+                    <img src="./政务网/gsl_title_more.jpg" style="float: right">
+                </div>
+                <div class="GSLcontent">
+                    <div class="GSLdetail">
+                        <div class="GSLtime"><span style="text-align: center; color: aliceblue;font-size: 13px;">&nbsp;4-12</span></div>
+                        <span ><a href="#">县党政领导2011年4月14日（周<br>&nbsp;四）接待来访群众中...</a> </span>
+                    </div> 
+                    <div class="GSLdetail">
+                        <div class="GSLtime"><span style="text-align: center;  color: aliceblue; font-size: 13px;">&nbsp;&nbsp;4-1</span></div>
+                        <span><a href="#">县党政领导2011年4月7日（周<br>&nbsp;四）接待来访群众中...</a></span>
+                    </div>
+                </div>            
+            </div>
+            <div class="newslist">
+                <div class="listnav">
+                    <ul class="navUa11">
+                        <li  class="tab-head-div2 current1" onclick="selectTab(0)">崇明新闻</li>
+                        <li class="tab-head-div2 " onclick="selectTab(1)">视频新闻</li>
+                        <li class="tab-head-div2" onclick="selectTab(2)">崇明报</li>
+                        <li class="tab-head-div2" onclick="selectTab(3)">岛外媒体关注</li>
+                    </ul>
+                </div>
+                <div class="listnavmore">
+                   <a href="#" title="更多"><img src="./政务网/left_hd_title_more.gif" alt=""></a> 
+                </div>
+                <div class="listcontent clearfix tab-body-div2  current1">
+                    <div class="newstitle"><a href="#">完善商业布局&nbsp;丰富市民消费</a></div>
+                    <div class="newscontent">
+                        <ul class="newsul11">
+                            <li><a href="#">崇明调查队召开农村住户季度工作会议</a></li>
+                            <li><a href="#">县税务局举行“高效生态农业与税收”特色宣传活...</a></li>
+                            <li><a href="#">我县召开乡镇人口计生干部工作会议</a></li>
+                            <li><a href="#">为1380名重度失智困难老人配送护理用品</a></li>
+                            <li><a href="#">陈家镇新一轮配套商品房基地开工&nbsp;努力构建物展...</a></li>
+                            <li><a href="#">建立有效机制&nbsp;加强监督管理</a></li>
+                        </ul>
+                    </div>
+                    <div class="listpic">
+                        <img src="./政务网/zt_title.jpg" alt="" style="float: left;">
+                        <img src="./政务网2/00004320.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/xwfb.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/lh2010.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                    </div>
+                </div>
+        
+                <div class="clearfix tab-body-div2 listcontent1 ">
+                    <div class="newstitle"><a href="#">视频新闻</a></div>
+                    <div class="newscontent">
+                        <ul class="newsul11">
+                            <li><a href="#">崇明调查队召开农村住户季度工作会议</a></li>
+                            <li><a href="#">县税务局举行“高效生态农业与税收”特色宣传活...</a></li>
+                            <li><a href="#">我县召开乡镇人口计生干部工作会议</a></li>
+                            <li><a href="#">为1380名重度失智困难老人配送护理用品</a></li>
+                            <li><a href="#">陈家镇新一轮配套商品房基地开工&nbsp;努力构建物展...</a></li>
+                            <li><a href="#">建立有效机制&nbsp;加强监督管理</a></li>
+                        </ul>
+                    </div>
+                    <div class="listpic">
+                        <img src="./政务网/zt_title.jpg" alt="" style="float: left;">
+                        <img src="./政务网2/00004320.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/xwfb.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/lh2010.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                    </div>
+                </div>
+        
+                <div class="clearfix tab-body-div2 listcontent2 ">
+                    <div class="newstitle"><a href="#">崇明报</a></div>
+                    <div class="newscontent">
+                        <ul class="newsul11">
+                            <li><a href="#">崇明调查队召开农村住户季度工作会议</a></li>
+                            <li><a href="#">县税务局举行“高效生态农业与税收”特色宣传活...</a></li>
+                            <li><a href="#">我县召开乡镇人口计生干部工作会议</a></li>
+                            <li><a href="#">为1380名重度失智困难老人配送护理用品</a></li>
+                            <li><a href="#">陈家镇新一轮配套商品房基地开工&nbsp;努力构建物展...</a></li>
+                            <li><a href="#">建立有效机制&nbsp;加强监督管理</a></li>
+                        </ul>
+                    </div>
+                    <div class="listpic">
+                        <img src="./政务网/zt_title.jpg" alt="" style="float: left;">
+                        <img src="./政务网2/00004320.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/xwfb.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/lh2010.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                    </div>
+                </div>
+        
+                <div class="clearfix tab-body-div2 listcontent3 ">
+                    <div class="newstitle"><a href="#">岛内外媒体关注</a></div>
+                    <div class="newscontent">
+                        <ul class="newsul11">
+                            <li><a href="#">崇明调查队召开农村住户季度工作会议</a></li>
+                            <li><a href="#">县税务局举行“高效生态农业与税收”特色宣传活...</a></li>
+                            <li><a href="#">我县召开乡镇人口计生干部工作会议</a></li>
+                            <li><a href="#">为1380名重度失智困难老人配送护理用品</a></li>
+                            <li><a href="#">陈家镇新一轮配套商品房基地开工&nbsp;努力构建物展...</a></li>
+                            <li><a href="#">建立有效机制&nbsp;加强监督管理</a></li>
+                        </ul>
+                    </div>
+                    <div class="listpic">
+                        <img src="./政务网/zt_title.jpg" alt="" style="float: left;">
+                        <img src="./政务网2/00004320.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/xwfb.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                        <img src="./政务网/lh2010.jpg" alt="" style="float: left;width: 130px;margin-top: 10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="imformation">
+            <div class="imforlist">
+                <div class="imforhead">
+                   <div class="imforlistnav">
+                    <ul class="IMul2">
+                        <li><a href="#">最近信息公开</a></li>
+                        <li><a href="#">工程招标</a></li>
+                        <li><a href="#">政府采购</a></li>
+                        <li><a href="#">资产交易</a></li>
+                    </ul>
+                   </div>
+                   <div class="imforlistmore">
+                     <a href="#" title="更多"><img src="./政务网/bm_title_more.jpg" alt="" style="height: 23px;position: relative;left: 0px;"></a> 
+                   </div>
+                </div>
+                <div class="imforbody">
+                    <div class="imforcontent">
+                        <ul class="imul1">
+                        <li><a href="#">崇明县人民政府关于建立崇明县国家级生态农业标准化...</li>
+                        <li><a href="#">2010年崇明县妇女儿童发展规划终期检测报告</a></li>
+                        <li><a href="#">我县召开乡镇人口计生干部工作会议</a></li>
+                        <li><a href="#">为1380名重度失智困难老人配送护理用品</a></li>
+                        <li><a href="#">陈家镇新一轮配套商品房基地开工&nbsp;努力构建物展...</a></li>
+                        </ul>
+                    </div>
+                    <div class="imforcontentpic">
+                        <div class="imforcontentpic1"></div>
+                        <div class="imforcontentpic2"></div>
+                        <div class="imforcontentpic3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="imformenu">
+                <div class="imformenutitle">
+                    <img src="./政务网/xxgkML_title.jpg" alt="">
+                </div>
+                <ul class="imul3">
+                    <li><a href="#">公开年报 丨</a></li>
+                    <li><a href="#">县政府部门和乡镇公开</a></li>
+                    <li><a href="#">政府公报 丨</a></li>
+                    <li><a href="#">政府会议 丨</a></li>
+                    <li><a href="#">政府文件 丨</a></li>
+                    <li><a href="#">征地出让 丨</a></li>
+                    <li><a href="#">拆迁公告 丨</a></li>
+                    <li><a href="#">政府采购 丨</a></li>
+                    <li><a href="#">人事任免 丨</a></li>
+                    <li><a href="#">政策决策 丨</a></li>
+                    <li><a href="#">宝岛规划 丨</a></li>
+                    <li><a href="#">工作问答 丨</a></li>
+                    <li><a href="#">政策解读 丨</a></li>
+                    <li><a href="#">统计信息 丨</a></li>
+                    <li><a href="#">工程招标 丨</a></li>
+                </ul>
+            </div>           
+        </div>
+
+        <div class="online">
+            <div class="onlinehead">
+                <div class="ontileright"></div>
+                <div class="onlinesearch">
+                    <span>办事查询:
+                    <input type="radio" name="A1">办事机构
+                    <input type="radio" name="A1">办事类别</span>
+                </div>
+            </div>
+            <div class="online111">
+                <select id="selectA1" style="width: 120px;">
+                    <option> 请选择办事机构</option>
+                    <option value="type2">县国资委</option>
+                    <option value="type1">县环保局</option>
+                    <option value="type1">县卫生局</option>
+                    <option value="type1">县住房保障房屋管理局</option>
+                    <option value="type1">县公安局</option>
+                    <option value="type1">县农委</option>
+                    <option value="type1">县建设交通委</option>
+                    <option value="type1">县人口计生委</option>
+                    <option value="type1">县司法局</option>
+                    <option value="type1">县民政局</option>
+                    <option value="type1">县统计局</option>
+                    <option value="type1">县文广影视局</option>
+                    <option value="type1">县规划土地局</option>
+                    <option value="type1">县规划土地局</option>
+                    <option value="type1">县规划土地局</option>
+                    <option value="type1">县交通港口局</option>
+                    <option value="type1">县安全监管局</option>
+                    <option value="type1">县科委</option>
+                </select>
+                <input type="text" style="width: 150px;">
+            </div>
+            <div class="onlinebody">
+                <div class="OLcontentleft">
+                    <div class="onlinebodytitle"><a href="#">办事指南</a> </div>
+                    <div class="onlinecontent">        
+                        <ul class="onul1">
+                        <li><a href="#">上海市人才中介服务机构与业务许可</a> </li>
+                        <li><a href="#">县内人事调动</a> </li>
+                        <li><a href="#">崇明市人事争议处理</a> </li>
+                        <li><a href="#">退休人员管理</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="OLcontentright">
+                    <div class="guidesearch">
+                        <p style="float: left;color: RGB(124,198,61);line-height: 25px;font-weight: 600;font-size: 13px;">办事指南查询:</p>&nbsp;
+                        <input type="radio"  name="B1" style="float: left;margin-left: 10px;margin-top: 6px;"><p style="color: gray;float: left;line-height: 25px;font-size: 13px;">&nbsp;市民办事</p>
+                        <input type="radio" name="B1" style="float: left;margin-left: 15px;margin-top: 6px;"><p style="color: gray;float: left;line-height: 25px;font-size: 13px;" >&nbsp;企业办事</p>
+                    </div>
+                    <div class="guideselect">
+                        
+                        <select style="float: left;margin-top: 3px;width: 120px ;" id="scrollElement" size="1" >
+                            <option value="type1" selected>请选择办事类别</option>
+                           <option >开办申办</option>
+                           <option >变更申办</option>
+                           <option >准营申办</option>
+                           <option >年检</option>
+                           <option >工商物价</option>
+                           <option >人才培训</option>
+                           <option >劳动保障</option>
+                           <option >公安司法</option>
+                           <option >水务</option>
+                           <option >城市交通</option>
+                           <option >破产歇业</option>
+                           <option >房屋土地</option>
+                           <option >民政事务</option>
+                           <option >医疗卫生</option>
+                        </select>
+                        <input type="text" style="float: left;margin-top: 3px;margin-left: 5px;width: 145px;">
+                        <img src="./政务网/wsbs_search_btn.gif" alt="" style="margin-top: 3px;margin-left: 5px;">
+                    </div>
+                    <hr style="color: gray;width: 330px;border: 1px dashed;">
+                    <div class="downloadsearch">
+                        <p style="color: RGB(124,198,61);line-height: 25px;font-weight: 600;font-size: 13px;">表格下载查询:</p>&nbsp;
+                        <input type="text" style="float: left;margin-left: 5px;width: 180px;">
+                        <img src="./政务网/wsbs_search_btn.gif" alt="" style="margin-left: 3px;float: left;">
+                        <img src="./政务网/btn01.gif" alt="" style="float: left;margin-left: 3px;">
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="tips">
+            <div class="tipshead">
+                
+                <div class="tips1a">
+                    <p id="p1a"></p>
+            </div>
+            
+              
+            </div>
+            <div class="tipsbody">
+                <div class="server2a">
+                </div>
+                <div class="tipsnav">
+                      <div class="div22"> <a href="#" title="更多"><img src="./政务网/bm_title_more.jpg" alt="" ></a> </div> 
+                    <div class="serve1">
+                        <ul class="serverul">
+                            <li><a href="#">社保 |</a></li>
+                            <li><a href="#">船期 |</a></li>
+                            <li><a href="#">教育 |</a></li>
+                            <li><a href="#">就业 |</a></li>
+                            <li><a href="#">房产 |</a></li>
+            
+                            <li><a href="#">金融 |</a></li>
+                            <li><a href="#">社区服务 |</a></li>
+                            <li><a href="#">公共设施 |</a></li>
+                            <li><a href="#">水电煤 |</a></li>
+                            <li><a href="#">法律咨询 |</a></li>
+                        </ul>
+                    </div>
+                    <div class="tipsnavimg1">
+                       <div class="tipimgs1"></div>
+                       <div class="tipimgs2"></div>
+                       <div class="tipimgs3"></div>
+                       <div class="tipimgs4"></div>
+                       <div class="tipimgs5"></div>
+                       <div class="tipimgs6"></div>
+                       <div class="tipimgs7"></div>
+                       <div class="tipimgs8"></div> 
+                    </div>
+                    <div class="tipnavimg2">
+                        <a href="#"><img src="./政务网2/bm_fwdh_btn1.jpg" alt="" style="float: left;margin-top: 3px;margin-left: 5px;"></a>
+                        <a href="#"><img src="./政务网2/bm_fwdh_btn2.jpg" alt="" style="float: left;margin-top: 3px;margin-left: 5px;"></a>
+                        <a href="#"><img src="./政务网2/bm_fwdh_btn3_1.jpg" alt="" style="float: left;margin-top: 3px;margin-left: 5px;"></a>
+                    </div>
+                </div>
+                <div class="QA">
+                    <div class="QAtitle">
+                        <div class="img1A"><img src="./政务网/bm_bmwd_title.jpg" alt=""></div>
+                        <div class="img1B"><a href="#" title="更多"><img src="./政务网/bm_title_more.jpg" alt=""></a></div>
+                    </div>
+                    <div class="QAcontent">
+                        <ul class="QAul">
+                            <li><a href="#"> 今年怎样增加基本养老金？</a></li>
+                            <li><a href="#"> 今年增加基本养老金范围对象是怎样确...</a></li>
+                            <li><a href="#"> 今年特殊增加基本养老金的具体政策是..</a></li>
+                            <li><a href="#"> 今年增加企事业单位退休人员基本养老...</a></li>
+                            <li><a href="#"> 麻疹疫苗强化免疫知识问答</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="maptitle"><img src="./政务网/bm_bmmap_title.jpg" alt=""></div>
+                    <div class="mappic"><a href="#"><img src="./政务网2/bm_bmmap_map.jpg " alt="" title="电子地图"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- new1新闻区开始 -->
+        <div class="new1 clearfix tab-head">
+            <ul class="nul1">
+                <li class="tab-head-div current" onclick="selectTab(0)"><p class="pA11">区县政府网站</p></li>
+                <li class="tab-head-div " onclick="selectTab(1)"><p class="pA12">崇明部门网站</p></li>
+                <li class="tab-head-div" onclick="selectTab(2)">崇明乡镇网站</li>
+                <li class="tab-head-div" onclick="selectTab(3)">本县主要网站</li>
+            </ul>
+        </div>
+        <div class="wanye2 clearfix tab-body-div current ">
+            <ul>
+                <li><a href="#">崇明发改委</a></li>
+                <li><a href="#">崇明经委</a></li>
+                <li><a href="#">崇明农业</a></li>
+                <li><a href="#">崇明建委</a></li>
+                <li><a href="#">崇明科技</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明人口</a></li>
+                <li><a href="#">崇明公安</a></li>
+                <li><a href="#">崇明人才</a></li>
+                <li><a href="#">崇明民政</a></li>
+                <li><a href="#">崇明政府采购</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明统计</a></li>
+                <li><a href="#">崇明教育</a></li>
+                <li><a href="#">崇明体育</a></li>
+                <li><a href="#">崇明旅游</a></li>
+                <li><a href="#">县住房保障房屋管理局</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明绿化</a></li>
+                <li><a href="#">崇明水务局</a></li>
+                <li><a href="#">崇明安监</a></li>
+                <li><a href="#">崇明国资委</a></li>
+                <li><a href="#">崇明民防</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明工商</a></li>
+                <li><a href="#">崇明税务</a></li>
+                <li><a href="#">崇明质监</a></li>
+                <li><a href="#">崇明食品药品监督</a></li>
+                <li><a href="#">崇明行政服务中心</a></li>
+            </ul>      
+            <ul>
+                <li><a href="#">崇明城管</a></li>
+                <li><a href="#">崇明环卫</a></li>
+                <li><a href="#">崇明园林</a></li>
+                <li><a href="#">崇明气象</a></li>
+            </ul>
+        </div>
+        <div class="wanye3 clearfix tab-body-div  ">
+            <ul>
+                <li><a href="#">崇明发改委</a></li>
+                <li><a href="#">崇明经委</a></li>
+                <li><a href="#">崇明农业</a></li>
+                <li><a href="#">崇明建委</a></li>
+                <li><a href="#">崇明科技</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明人口</a></li>
+                <li><a href="#">崇明公安</a></li>
+                <li><a href="#">崇明人才</a></li>
+                <li><a href="#">崇明民政</a></li>
+                <li><a href="#">崇明政府采购</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明统计</a></li>
+                <li><a href="#">崇明教育</a></li>
+                <li><a href="#">崇明体育</a></li>
+                <li><a href="#">崇明旅游</a></li>
+                <li><a href="#">县住房保障房屋管理局</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明绿化</a></li>
+                <li><a href="#">崇明水务局</a></li>
+                <li><a href="#">崇明安监</a></li>
+                <li><a href="#">崇明国资委</a></li>
+                <li><a href="#">崇明民防</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">崇明工商</a></li>
+                <li><a href="#">崇明税务</a></li>
+                <li><a href="#">崇明质监</a></li>
+                <li><a href="#">崇明食品药品监督</a></li>
+                <li><a href="#">崇明行政服务中心</a></li>
+            </ul>      
+            <ul>
+                <li><a href="#">崇明城管</a></li>
+                <li><a href="#">崇明环卫</a></li>
+                <li><a href="#">崇明园林</a></li>
+                <li><a href="#">崇明气象</a></li>
+            </ul>
+        </div>
+				<div class="tab-body-div wanye4 clearfix">
+                    <ul>
+                        <li><a href="#">崇明发改委</a></li>
+                        <li><a href="#">崇明经委</a></li>
+                        <li><a href="#">崇明农业</a></li>
+                        <li><a href="#">崇明建委</a></li>
+                        <li><a href="#">崇明科技</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明人口</a></li>
+                        <li><a href="#">崇明公安</a></li>
+                        <li><a href="#">崇明人才</a></li>
+                        <li><a href="#">崇明民政</a></li>
+                        <li><a href="#">崇明政府采购</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明统计</a></li>
+                        <li><a href="#">崇明教育</a></li>
+                        <li><a href="#">崇明体育</a></li>
+                        <li><a href="#">崇明旅游</a></li>
+                        <li><a href="#">县住房保障房屋管理局</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明绿化</a></li>
+                        <li><a href="#">崇明水务局</a></li>
+                        <li><a href="#">崇明安监</a></li>
+                        <li><a href="#">崇明国资委</a></li>
+                        <li><a href="#">崇明民防</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明工商</a></li>
+                        <li><a href="#">崇明税务</a></li>
+                        <li><a href="#">崇明质监</a></li>
+                        <li><a href="#">崇明食品药品监督</a></li>
+                        <li><a href="#">崇明行政服务中心</a></li>
+                    </ul>      
+                    <ul>
+                        <li><a href="#">崇明城管</a></li>
+                        <li><a href="#">崇明环卫</a></li>
+                        <li><a href="#">崇明园林</a></li>
+                        <li><a href="#">崇明气象</a></li>
+                    </ul>
+                </div>
+
+				<div class="tab-body-div wanye5 clearfix">
+                    <ul>
+                        <li><a href="#">崇明发改委</a></li>
+                        <li><a href="#">崇明经委</a></li>
+                        <li><a href="#">崇明农业</a></li>
+                        <li><a href="#">崇明建委</a></li>
+                        <li><a href="#">崇明科技</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明人口</a></li>
+                        <li><a href="#">崇明公安</a></li>
+                        <li><a href="#">崇明人才</a></li>
+                        <li><a href="#">崇明民政</a></li>
+                        <li><a href="#">崇明政府采购</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明统计</a></li>
+                        <li><a href="#">崇明教育</a></li>
+                        <li><a href="#">崇明体育</a></li>
+                        <li><a href="#">崇明旅游</a></li>
+                        <li><a href="#">县住房保障房屋管理局</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明绿化</a></li>
+                        <li><a href="#">崇明水务局</a></li>
+                        <li><a href="#">崇明安监</a></li>
+                        <li><a href="#">崇明国资委</a></li>
+                        <li><a href="#">崇明民防</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">崇明工商</a></li>
+                        <li><a href="#">崇明税务</a></li>
+                        <li><a href="#">崇明质监</a></li>
+                        <li><a href="#">崇明食品药品监督</a></li>
+                        <li><a href="#">崇明行政服务中心</a></li>
+                    </ul>      
+                    <ul>
+                        <li><a href="#">崇明城管</a></li>
+                        <li><a href="#">崇明环卫</a></li>
+                        <li><a href="#">崇明园林</a></li>
+                        <li><a href="#">崇明气象</a></li>
+                    </ul>
+                </div>
+       
+        <!-- new1新闻区结束 -->
+    </div>
+</div>
+    <!-- 右边信息区结束 -->
+</div>
+</div>
+    <!-- 版权区开始 -->
+    <div class="div2" style="position:absolute ;">
+    <div class="banquan center">
+        <div class="wenchongm">
+            <p style="color:#95a06d ;"><a href="#" class="Aa1">上海崇明政府网</a> 版权所有 | ©20006-2009 cmx.sh.gov.cn All Rights Reserved</p>
+            <p><a href="#" class="Aa2">崇明县人民政府  </a>地址：崇明县城桥镇人民路68号 邮编：202150 电话：59622324</p>
+            <p>建议使用IE5.0以上版本，1028×768屏幕分辨率浏览网站</p>
+            <p class="banquanp1">沪ICP备05014803</p>
+        </div>
+    </div> 
+</div>
+     <!-- 版权区结束 -->
+<script type="text/javascript" src="js1.js " ></script>
+
+</body>
+
+</html>
